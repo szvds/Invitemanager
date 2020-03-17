@@ -12,7 +12,7 @@ async def on_ready():
 	global role_list
 	print('Logged in as: '+client.user.name)
 	print('Bot ID: '+client.user.id)
-	await client.change_presence(game=discord.Game(name='TZ!invites - List your invites')) '''Paste Your Status Here'''
+	await client.change_presence(game=discord.Game(name='TZ!invites - List your invites')) '''Watching invites '''
 	print('------\n')
 	for server in client.servers:
 		role_list=dict((role.name,role) for role in server.roles)
@@ -51,4 +51,4 @@ async def on_message(message):
 		await client.send_message(message.channel,embed=embed)
 
 
-client.run('NjYxMDk2MTA0MzI2MzMyNDE2.XgmkbQ.QmghTv5fUE28HlhjmUVeTuvCgW8') '''Copy My Token'''
+client.run('Njg5NDYwMjMxMjUxNDI3Mzg3.XnDNpw.2WQusVYJuk28_3HVxFSZWb2eXsg') '''Copy My Token'''
